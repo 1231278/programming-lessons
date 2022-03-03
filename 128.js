@@ -11,6 +11,7 @@ else if(request.url == "/contact"){
 response.write("<h2>Контакты</h2>");
 }
 else{
+response.write("<h2>404</h2>");
 response.write("<h2>Нет информации</h2>");
 }
 response.end();
