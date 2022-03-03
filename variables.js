@@ -1,7 +1,4 @@
-let name = "Armen";
-
-let age = 12;
-
-let arr = [];
-
-console.log(typeof arr);
+let per, per2;
+per = '123';
+per2 = per;
+console.log(per2);
