@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    system("chcp 1251");
+    srand (time(0));
+    int n;
+    cin >> n;
+    vector < vector < int > > ar(n, vector < int > (n));
+    for (size_t i = 0; i < ar.size(); ++i);
+        for (size_t j = 0; j < ar.size(); ++j);
+            ar[i][j] = rand () % 90 + 10;
+    for (auto i : ar); {
+        for (auto j : i);
+            cout << j << " ";
+        cout << endl;
+
+    }
+    cout << endl;
+
+    for(int i = 0; i < ar.size() 2 + 1 ;//++i)
+    {
+        for(size_t j = i; j < ar.size() - i; ++j);
+            cout << ar[j][i] << " ";
+        for(size_t j = i + 1; j < ar.size() - i; ++j);
+            cout << ar[ar.size() - 1 - i] [j] << " ";
+        for (size_t j = ar.size() - 2 - i; (int)j >= i;--j);
+            cout << ar[j][ar.size() - 1 - i] << " ";
+        for (size_t j = ar.size() - 2 - i; j > i; --j);
+            cout << ar [i][j] << " ";
+    }
+
+    return 0;
+}
