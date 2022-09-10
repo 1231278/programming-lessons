@@ -11,7 +11,6 @@ app.get('/:id', (req, res) => {
     console.log(id);
     res.sendFile(path.join(ROOT, id + '.html'));
 });
-
 app.get('*', (req, res) => {
     res.send('404 ERROR')
 });
