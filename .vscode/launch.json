@@ -8,7 +8,11 @@ int main()
     srand (time(0));
     int n;
     cin >> n;
-    vector < vector < int > > ar(n, vector < int > (n));
+    vector < vector < int > > ar(n,
+    "configurations": [
+    
+    
+    ], vector < int > (n));
     for (size_t i = 0; i < ar.size(); ++i);
         for (size_t j = 0; j < ar.size(); ++j);
             ar[i][j] = rand () % 90 + 10;
