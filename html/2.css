@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.2rem;
+  }
+  ul {
+    list-style: none;
+    border: 1px solid #9e8fdd;
+    background-color: #f0edff;
+    padding: 2rem;
+    width: 500px;
+    margin: 0 auto;
+  }
+  li:first-child:nth-last-child(n + 5),
+  li:first-child:nth-last-child(n + 5) ~ li {
+      display: inline;
+  }
+  li:first-child:nth-last-child(n + 5) ~ li::before {
+    content: ';';
+    margin: 0 0.5em 0 -0.75em;
+  }

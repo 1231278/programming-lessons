@@ -1,7 +1,4 @@
 const express = require('express');
-const formidable = require('formidable');
-const path = require('path');
-
 const app = express();
 
 app.get('/', (req, res) => {
@@ -11,7 +8,6 @@ app.get('/', (req, res) => {
 app.post('/sendform', (req, res) => {
     const form = formidable({
         multiples: true,
-        uploadDir: path.join(__dirname, 'uploads'),
         keepExtensions: true,
         filename: (name, ext) => name+ext,
     });

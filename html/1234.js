@@ -1,9 +1,6 @@
 const express = require('express')
 const path = require('path');
 const fs = require('fs').promises;
-const formidable = require('formidable');
-const path = require('path');
-
 
 
 const PORT = 5545;
@@ -21,22 +18,10 @@ app.get('/:id', (req, res) => {
     res.sendFile(path.join(ROOT, id + '.html'));
 
 });
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'html', 'form.html'));
-});
 
-app.post('/sendform', (req, res) => {
-    const form = formidable({
-        multiples: true,
-        uploadDir: path.join(__dirname, 'uploads'),
-        keepExtensions: true,
-        filename: (name, ext) => name + ext,
-    });
-    form.parse(req);
-    res.redirect('/');
-});
-
-
+app.post('/sendform', (req, res) => {});
+form.parse(req);
+res.redirect('/');
 app.get('*', (req, res) => {
     res.send('404 ERROR')
 });
