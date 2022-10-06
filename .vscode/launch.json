@@ -10,6 +10,7 @@ int main()
     cin >> n;
     vector < vector < int > > ar(n,
     "configurations": [
+        
     
     
     ], vector < int > (n));
