@@ -1,0 +1,16 @@
+<html><head></head><body><button data-download_img="/assets/img/logo.png">Скачать</button>
+    
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="utf-8"></script>
+    <script>
+        function download_img(url){
+            var link = document.createElement('a');
+            link.target = "_blank";
+            link.download = "img.jpg";
+            link.href = url;
+            link.click();
+        }
+        $("[data-download_img]").click(function(){
+            var url=$(this).attr('data-download_img');
+            download_img(url);
+        });
+    </script></body></html>
