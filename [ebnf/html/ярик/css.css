@@ -1,0 +1,41 @@
+div {
+    width: 100%;
+    background: rgb(7, 213, 38);
+    box-shadow: 0 -200px 100px -120px rgb(168, 158, 163) inset;
+    animation: background 5s infinite alternate;
+}
+
+@keyframes background {
+    50% {
+        background: rgb(19, 9, 218);
+        box-shadow: 0 -200 100px -100px rgb(227, 10, 10) inset;
+    }
+
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    justify-content: center;
+    text-align: center;
+}
+
+.redBlock {
+    background-color: red;
+
+}
+
+.witeBlock {
+    background-color: rgb(13, 199, 75);
+}
+
+.form {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textarea {
+    justify-content: center;
+}

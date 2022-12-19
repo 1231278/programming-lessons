@@ -1,0 +1,72 @@
+body{
+    animation: background 10s infinite alternate;
+}
+
+
+div{
+    width: 100%;
+    background: rgb(255, 0, 0);
+    box-shadow: 0 -200px 100px -120px rgb(58, 0, 250) inset;
+    animation: background 10s infinite alternate;  
+    }
+    @keyframes background{
+        50%{
+            background: rgb(255, 0, 0);
+            box-shadow: 0 -200 100px -100px rgb(164, 224, 44) inset;
+        }
+        
+    }
+.flex-container{
+        display: flex;
+    }
+.flex-item
+    {    
+        justify-content: center;
+     text-align: center;
+    } 
+    .form{
+        flex-wrap: wrap;
+    }
+
+.redBlock{
+        background-color: rgb(255, 255, 255);
+        
+        }
+.witeBlock{
+            background-color: rgb(51, 0, 254);
+            }
+.form{
+    justify-content: center;
+}
+.textarea{
+    justify-content:center;
+}
+.form-control {
+    display: block;
+    width: 97%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.navbar-brand{
+    font-size:30px;
+}
+.btn-primary{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 -200px 100px -120px rgb(250, 29, 0) inset;
+    animation: background 1s infinite alternate;  
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>заметошки</title>
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <link rel="stylesheet" type="text/css" media="(max-device-width:480px)" href="mobile.css" />
+
+
+</head>
+
+<body>
+
+
+    <div class="flex-item" id="container">
+        <div class="card text-dark bg-light mb-3">
+            <div class="div1">
+
+                <h2 class="flex-item">добавить заметку </h2>
+                <div class="flex-item">
+
+                    <input name="guruweba_example_search" id="addNote" type="search" aria-label="With input">
+                    <form enctype="multipart/form-data" method="post">
+                        <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+                        </p>
+                        <button class="redBlock" id="addBtn" class="btn btn-primary">добавить</button>
+                </div>
+                <br />
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="noMatches" class="container-sm">
+
+        </div>
+
+        <div c id="notes" class="container-sm">
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
